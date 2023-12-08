@@ -10,7 +10,7 @@ const Header = () => {
     $(".overlay").ripples({
       dropRadius: 10,
       perturbance: 0.04,
-      resolution: 1099,
+      resolution: 420,
     });
   }, []);
 
