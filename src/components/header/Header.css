@@ -8,9 +8,9 @@
   position: absolute;
   top: 0;
   left: 0;
-  top: 4rem;
+  top: 3rem;
   background-image: url(../../assets/test.png);
-  background-position: -10svi center;
+  background-position: -11svi center;
   background-repeat: no-repeat;
   background-size: contain;
   width: 100%;
@@ -42,7 +42,7 @@
 
   width: auto;
 }
-
+/* 
 .imageDiv img {
   position: relative;
   width: auto;
@@ -52,12 +52,21 @@
   margin-top: 4rem;
   left: 20svi;
   transform: translate(-40%, -100%);
+} */
+
+.header__socials {
+  display: flex;
+  flex-direction: column;
 }
 .text {
   position: absolute;
   top: 70%;
   left: calc(100% - 7rem);
-  transform: translate(-50%, -40%);
+  transform: translate(-40%, -60%);
+}
+
+.description {
+  font-size: 1rem;
 }
 
 @media (min-width: 764px) {

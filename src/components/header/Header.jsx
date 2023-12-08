@@ -4,14 +4,15 @@ import { Container, Col } from "react-bootstrap";
 //import Image from "../assets/test.png";
 import $ from "jquery";
 import "jquery.ripples";
-import HeaderSocial from './HeaderSocial';
+import HeaderSocial from "./HeaderSocial";
+import { headerPage } from "../../components/data";
 
 const Header = () => {
   useEffect(() => {
     $(".overlay").ripples({
       dropRadius: 10,
-      perturbance: 0.04,
-      resolution: 420,
+      perturbance: 0.07,
+      resolution: 1025,
     });
   }, []);
 
@@ -22,10 +23,12 @@ const Header = () => {
         <div className="blank"></div>
         <Col className="imageDiv">{/* <img src={Image} alt="Image" /> */}</Col>
         <Col className="text">
-          <p>Hi, I am Basanta Shrestha New developer in town</p>
+          <h1>{headerPage.name}</h1>
+          <p className="description">{headerPage.Desc}</p>
         </Col>
       </div>
       <div className="overlay"></div>
+      <HeaderSocial />
     </>
   );
 };
