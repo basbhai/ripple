@@ -1,9 +1,10 @@
 import React, { useEffect } from "react";
 import "./Header.css";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Col } from "react-bootstrap";
 //import Image from "../assets/test.png";
 import $ from "jquery";
 import "jquery.ripples";
+import HeaderSocial from './HeaderSocial';
 
 const Header = () => {
   useEffect(() => {
