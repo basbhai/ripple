@@ -1,44 +1,53 @@
 import React from "react";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import "./styleAbout.css";
-//import ME from "../../assets/me-about.jpg";
-// import { FaAward } from "react-icons/fa";
-// import { VscOrganization } from "react-icons/vsc";
-// import { MdOutlineWork } from "react-icons/md";
-import { Container, Row, Col } from "react-bootstrap";
-//import AboutMe from './AboutMe';
+import ME from "../../assets/me-about.jpg";
+import { Container, Row, Col, Stack } from "react-bootstrap";
+import { FaAward } from "react-icons/fa";
+import { VscOrganization } from "react-icons/vsc";
+import { MdOutlineWork } from "react-icons/md";
 
 const About = () => {
   return (
     <div className="about_box">
-      outside test
-      <Container></Container>
-      {/* <h5>Get To Know</h5>
-      <h2>About Me</h2>
+      <Container className="container-lg">
+        <Stack gap={1} className="col-md-8 mx-auto">
+          <div className="p-2">
+            <h1>About Me</h1>
+          </div>
 
-      <div className="container about__container">
-        <div className="about__me">
-          <div className="about__me-image">
-            <img src={ME} alt="About Image" />
-          </div>
-        </div>
-        <div className="about__content">
-          <div className="about__cards">
-            <article className="about__card">
-              <FaAward className="about__icon" />
-              <h5>Experiences</h5>
-              <small>12+ of Banking Career</small>
-            </article>
-            <article className="about__card">
-              <VscOrganization className="about__icon" />
-              <h5>Organization & Departments</h5>
-              <small></small>
-            </article>
-            <article className="about__card">
-              <MdOutlineWork className="about__icon" />
-              <h5>Projects</h5>
-              <small></small>
-            </article>
-          </div>
+          <Row className="gy-4">
+            <Col sm={1} md={1} lg={1} xl={4} className="d-flex justify-content-center align-items-center">
+              <div className="aboutMe_img">
+                <img src={ME} alt="me" />
+              </div>
+            </Col>
+            <Col sm={11} md={11} lg={8} xl={8}>
+              <Row>
+                <Col>
+                  <Row>
+                    <Col className="about__card">
+                      <FaAward className="about__icon" />
+                      <h5>Experiences</h5>
+                      <small>12+ of Banking Career</small>
+                    </Col>
+                    <Col className="about__card">
+                      <VscOrganization className="about__icon" />
+                      <h5>Organization & Departments</h5>
+                      <small></small>
+                    </Col>
+                    <Col className="about__card">
+                      <MdOutlineWork className="about__icon" />
+                      <h5>Projects</h5>
+                      <small></small>
+                    </Col>
+                  </Row>
+                </Col>
+              </Row>
+            </Col>
+          </Row>
+
           <p>
             Highly experienced banker with over a decade of expertise in credit
             management, branch management, and MIS seeking a challenging
@@ -47,11 +56,8 @@ const About = () => {
             Node.js developer, I bring a unique blend of technical proficiency
             and banking knowledge to deliver innovative solutions.
           </p>
-          <a href="#contact" className="btn btn-primary ">
-            Let's Talk
-          </a>
-        </div>
-      </div> */}
+        </Stack>
+      </Container>
     </div>
   );
 };

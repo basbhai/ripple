@@ -27,8 +27,11 @@ const Header = () => {
           <p className="description">{headerPage.Desc}</p>
         </Col>
       </div>
-      <div className="overlay"></div>
-      <HeaderSocial />
+      <div className="overlay">
+        <Container>
+          <HeaderSocial />
+        </Container>
+      </div>
     </>
   );
 };
